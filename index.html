@@ -23,6 +23,13 @@
         cursor: pointer;
         margin-top: 1rem;
       }
+
+      @media screen and (max-width: 768px) {
+        .camera {
+          display: flex;
+          flex-direction: column;
+        }
+      }
     </style>
   </head>
   <body>
@@ -32,7 +39,9 @@
       <canvas></canvas>
     </div>
 
-    <div class="result"><button type="button" class="capture">capture</button><br /><br /></div>
+    <div class="result">
+      <button type="button" class="capture">capture</button><br /><br />
+    </div>
     <script src="./webcam.js"></script>
   </body>
 </html>
